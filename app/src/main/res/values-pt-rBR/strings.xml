@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cidade Verde</string>
+
+    <string name="nome_app">Meio Ambiente!</string>
+    <string name="login_name">Nome</string>
+    <string name="login_password">Senha</string>
+    <string name="remember">Lembrar conta</string>
+    <string name="button_login">Entrar</string>
+    <string name="create_account"> OU CRIE UMA CONTA</string>
+    <string name="msgError">Erro do usúario</string>
+    <string name="email">Email</string>
+    <string name="dateNas">Data de nascimento</string>
+    <string name="finalizeRegs">Finalizar</string>
+    <string name="welcome">Bem-vindo,</string>
+    <string name="accessMenu">Acesse o menu</string>
+    <string name="textApp">O Cidade Limpa tem como foco as questões ambientais da cidade.</string>
+
+    <string name="textApp2">O aplicativo tem o intuito de estimular a população a se tornar mais
+participativa no processo de limpeza urbana, tornando a cidade mais limpa e sustentável.</string>
+</resources>
