@@ -78,9 +78,9 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="196dp"
+        android:layout_width="270dp"
         android:layout_height="39dp"
-        android:text="Crie sua conta"
+        android:text="@string/cryAccount"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
