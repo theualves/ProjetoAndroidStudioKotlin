@@ -1,5 +1,6 @@
 package com.example.meuprojeto
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -50,6 +51,8 @@ class tela_cadastro : AppCompatActivity() {
             dbRef.child(empId).setValue(usuario)
                 .addOnCompleteListener{
                     Toast.makeText(this, "Cadastro realizado", Toast.LENGTH_SHORT).show()
+                    val navegarListaUsuario = Intent(this, ListaUsuarioActivity::class.java)
+                    startActivity(navegarListaUsuario)
 
                     edNome.text.clear()
                     edEmail.text.clear()
@@ -60,5 +63,7 @@ class tela_cadastro : AppCompatActivity() {
                     Toast.makeText(this, "Error ${err.message}", Toast.LENGTH_SHORT).show()
                 }
         }
+
+
+        }
     }
-}
