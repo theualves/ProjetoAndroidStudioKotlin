@@ -7,7 +7,7 @@
     tools:context=".tela_cadastro">
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/edNome"
         android:layout_width="290dp"
         android:layout_height="55dp"
         android:layout_marginTop="12dp"
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/edEmail"
         android:layout_width="290dp"
         android:layout_height="55dp"
         android:layout_marginTop="8dp"
@@ -29,13 +29,13 @@
         android:hint="@string/email"
         android:inputType="textPersonName"
         android:padding="15dp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"
+        app:layout_constraintEnd_toEndOf="@+id/edNome"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintStart_toStartOf="@+id/edNome"
+        app:layout_constraintTop_toBottomOf="@+id/edNome" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/edSenha"
         android:layout_width="290dp"
         android:layout_height="55dp"
         android:layout_marginTop="8dp"
@@ -44,13 +44,13 @@
         android:hint="@string/login_password"
         android:inputType="textPassword"
         android:padding="15dp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edEmail"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintStart_toStartOf="@+id/edEmail"
+        app:layout_constraintTop_toBottomOf="@+id/edEmail" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/edDataNasc"
         android:layout_width="290dp"
         android:layout_height="55dp"
         android:layout_marginTop="8dp"
@@ -59,13 +59,13 @@
         android:hint="@string/dateNas"
         android:inputType="textPersonName"
         android:padding="15dp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword2"
+        app:layout_constraintEnd_toEndOf="@+id/edSenha"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+        app:layout_constraintStart_toStartOf="@+id/edSenha"
+        app:layout_constraintTop_toBottomOf="@+id/edSenha" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button2"
+        android:id="@+id/buttonFinalize"
         android:layout_width="150dp"
         android:layout_height="48dp"
         android:layout_marginStart="220dp"
@@ -73,8 +73,8 @@
         android:text="@string/finalizeRegs"
         android:textColor="@color/white"
         android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName3"
-        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName3" />
+        app:layout_constraintBottom_toBottomOf="@+id/edDataNasc"
+        app:layout_constraintStart_toEndOf="@+id/edDataNasc" />
 
     <TextView
         android:id="@+id/textView4"

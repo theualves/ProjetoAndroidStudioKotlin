@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "613006406298",
+    "project_id": "cidade-limpa-26069",
+    "storage_bucket": "cidade-limpa-26069.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:613006406298:android:6fe959d42d0b384186e523",
+        "android_client_info": {
+          "package_name": "com.example.meuprojeto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "613006406298-7o2ev7lvauqdqvhc4gcu0o7h4lkve646.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-BSqY5Qnh-N_D38fTIKvoSMurlgRmXIs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "613006406298-7o2ev7lvauqdqvhc4gcu0o7h4lkve646.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
