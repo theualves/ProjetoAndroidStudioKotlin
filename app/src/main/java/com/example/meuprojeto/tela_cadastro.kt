@@ -24,12 +24,16 @@ class tela_cadastro : AppCompatActivity() {
 
         dbRef = FirebaseDatabase.getInstance().getReference("Usuário")
 
+        var camposPreenchidos = false
+
         btCadastrar.setOnClickListener{
 
             val empNome =  edNome.text.toString()
             val empEmail = edEmail.text.toString()
             val empSenha = edSenha.text.toString()
             val empDataNasc = edDataNasc.text.toString()
+
+            camposPreenchidos = !empNome.isEmpty() && !empEmail.isEmpty() && !empSenha.isEmpty() && !empDataNasc.isEmpty()
 
             if(empNome.isEmpty()){
                 edNome.error = "Por favor insira seu nome"
@@ -48,20 +52,19 @@ class tela_cadastro : AppCompatActivity() {
 
             val usuario = EmpresaModelo(empId, empNome, empEmail, empSenha, empDataNasc)
 
-            dbRef.child(empId).setValue(usuario)
-                .addOnCompleteListener{
-                    Toast.makeText(this, "Cadastro realizado", Toast.LENGTH_SHORT).show()
-                    val navegarListaUsuario = Intent(this, ListaUsuarioActivity::class.java)
-                    startActivity(navegarListaUsuario)
+            if (camposPreenchidos) {
 
-                    edNome.text.clear()
-                    edEmail.text.clear()
-                    edSenha.text.clear()
-                    edDataNasc.text.clear()
+                dbRef.child(empId).setValue(usuario)
+                    .addOnCompleteListener {
+                        Toast.makeText(this, "Cadastro realizado", Toast.LENGTH_SHORT).show()
+                        val navegarListaUsuario = Intent(this, ListaUsuarioActivity::class.java)
+                        startActivity(navegarListaUsuario)
+                    }
 
-                }.addOnFailureListener{err ->
-                    Toast.makeText(this, "Error ${err.message}", Toast.LENGTH_SHORT).show()
-                }
+            }
+            else{
+                Toast.makeText(this, "Preencha todos os campos", Toast.LENGTH_SHORT).show()
+            }
         }
 
 
