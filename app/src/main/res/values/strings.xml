@@ -19,4 +19,14 @@
     <string name="textApp2">The app aims to encourage the population to become more
 participatory in the urban cleaning process, making the city cleaner and more sustainable.</string>
 
+    <string name="nameEmpty">Please enter your name</string>
+    <string name="emailEmpty">Please enter a valid email</string>
+    <string name="passwordEmpty">Please enter a password</string>
+    <string name="dateBirthEmpty">Please enter your date of birth</string>
+
+    <string name="cadastroRealizado">Registration done</string>
+    <string name="preenchaCampos">Fill in all fields</string>
+
+    <string name="listItemUser">User:</string>
+
 </resources>

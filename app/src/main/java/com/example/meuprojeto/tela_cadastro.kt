@@ -8,6 +8,12 @@ import com.example.meuprojeto.databinding.ActivityTelaCadastroBinding
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
+import android.app.DatePickerDialog
+import android.widget.DatePicker
+import java.text.SimpleDateFormat
+import java.util.Calendar
+import java.util.Locale
+
 class tela_cadastro : AppCompatActivity() {
     private lateinit var binding : ActivityTelaCadastroBinding
     private lateinit var dbRef: DatabaseReference
@@ -36,16 +42,16 @@ class tela_cadastro : AppCompatActivity() {
             camposPreenchidos = !empNome.isEmpty() && !empEmail.isEmpty() && !empSenha.isEmpty() && !empDataNasc.isEmpty()
 
             if(empNome.isEmpty()){
-                edNome.error = "Por favor insira seu nome"
+                edNome.error = getString(R.string.nameEmpty)
             }
             if(empEmail.isEmpty()){
-                edEmail.error = "Por favor insira um e-mail válido"
+                edEmail.error = getString(R.string.emailEmpty)
             }
             if(empSenha.isEmpty()){
-                edSenha.error = "Por favor crie uma senha"
+                edSenha.error = getString(R.string.passwordEmpty)
             }
             if(empDataNasc.isEmpty()){
-                edDataNasc.error = "Por favor insira sua data de nascimento"
+                edDataNasc.error = getString(R.string.dateBirthEmpty)
             }
 
             val empId = dbRef.push().key!!
@@ -56,14 +62,14 @@ class tela_cadastro : AppCompatActivity() {
 
                 dbRef.child(empId).setValue(usuario)
                     .addOnCompleteListener {
-                        Toast.makeText(this, "Cadastro realizado", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this, getString(R.string.cadastroRealizado), Toast.LENGTH_SHORT).show()
                         val navegarListaUsuario = Intent(this, ListaUsuarioActivity::class.java)
                         startActivity(navegarListaUsuario)
                     }
 
             }
             else{
-                Toast.makeText(this, "Preencha todos os campos", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.preenchaCampos), Toast.LENGTH_SHORT).show()
             }
         }
 

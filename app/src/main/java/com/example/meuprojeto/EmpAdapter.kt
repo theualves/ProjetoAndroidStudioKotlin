@@ -28,6 +28,8 @@ class EmpAdapter(private val empList: ArrayList<EmpresaModelo>) :
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val currentEmp = empList[position]
         holder.tvEmpName.text = currentEmp.empNome
+        holder.tvEmpEmail.text = currentEmp.empEmail
+        holder.tvEmpId.text = currentEmp.empId
     }
 
     override fun getItemCount(): Int {
@@ -38,19 +40,10 @@ class EmpAdapter(private val empList: ArrayList<EmpresaModelo>) :
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         val tvEmpName : TextView = itemView.findViewById(R.id.tvEmpName)
+        val tvEmpEmail : TextView = itemView.findViewById(R.id.tvEmpEmail)
+        val tvEmpId : TextView = itemView.findViewById(R.id.tvEmpId)
 
 
     }
-//    class ViewHolder(itemView: View, clickListener: onItemClickListener) : RecyclerView.ViewHolder(itemView) {
-//
-//        val tvEmpName : TextView = itemView.findViewById(R.id.tvEmpName)
-//
-//        init {
-//            itemView.setOnClickListener {
-//                clickListener.onItemClick(adapterPosition)
-//            }
-//        }
-//
-//    }
 
 }

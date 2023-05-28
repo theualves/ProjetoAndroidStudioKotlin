@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -8,30 +7,85 @@
     android:layout_margin="8dp">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="375dp"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="16dp"
         android:layout_gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="16dp">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/tvEmpName"
-                android:layout_width="wrap_content"
+                android:id="@+id/tvName"
+                android:layout_width="75dp"
                 android:layout_height="wrap_content"
-                android:text="Emp Name"
-                android:layout_gravity="center"
-                android:gravity="center"
+                android:text="@string/listItemUser"
                 android:textColor="@color/black"
-                android:textSize="30sp"
-                android:textStyle="bold"/>
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
+            <TextView
+                android:id="@+id/tvEmpName"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Emp Name"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:background="@drawable/green_background"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="E-mail:"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvEmpEmail"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Emp Email"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvId"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="ID:"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvEmpId"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Emp ID"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
 
         </LinearLayout>
 

@@ -19,4 +19,15 @@
 
     <string name="textApp2">O aplicativo tem o intuito de estimular a população a se tornar mais
 participativa no processo de limpeza urbana, tornando a cidade mais limpa e sustentável.</string>
+
+    <string name="nameEmpty">Por favor, insira seu nome</string>
+    <string name="emailEmpty">Por favor, insira um e-mail válido</string>
+    <string name="passwordEmpty">Por favor, insira uma senha</string>
+    <string name="dateBirthEmpty">Por favor, insira sua data de nascimento</string>
+
+    <string name="cadastroRealizado">Cadastro realizado</string>
+    <string name="preenchaCampos">Preencha todos os campos</string>
+
+    <string name="listItemUser">Usuário:</string>
+
 </resources>

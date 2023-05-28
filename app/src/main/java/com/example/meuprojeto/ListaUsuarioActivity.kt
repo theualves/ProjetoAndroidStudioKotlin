@@ -46,20 +46,6 @@ class ListaUsuarioActivity : AppCompatActivity() {
                     val mAdapter = EmpAdapter(empList)
                     empRecyclerView.adapter = mAdapter
 
-//                    mAdapter.setOnItemClickListener(object : EmpAdapter.onItemClickListener{
-//                        override fun onItemClick(position: Int) {
-//
-//                            val intent = Intent(this@FetchingActivity, EmployeeDetailsActivity::class.java)
-//
-//                            //put extras
-//                            intent.putExtra("empId", empList[position].empId)
-//                            intent.putExtra("empName", empList[position].empNome)
-//                            intent.putExtra("empCargo", empList[position].empCargo)
-//                            intent.putExtra("empSalary", empList[position].emSalario)
-//                            startActivity(intent)
-//                        }
-//
-//                    })
 
                     empRecyclerView.visibility = View.VISIBLE
                     tvLoadingData.visibility = View.GONE

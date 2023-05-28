@@ -51,15 +51,16 @@
         app:layout_constraintStart_toStartOf="@+id/edEmail"
         app:layout_constraintTop_toBottomOf="@+id/edEmail" />
 
-    <EditText
+    <com.vicmikhailau.maskededittext.MaskedEditText
         android:id="@+id/edDataNasc"
+        app:mask="##/##/####"
         android:layout_width="320dp"
         android:layout_height="56dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/custom_edittext"
         android:ems="10"
         android:hint="@string/dateNas"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:padding="15dp"
         app:layout_constraintEnd_toEndOf="@+id/edSenha"
         app:layout_constraintTop_toBottomOf="@+id/edSenha" />
@@ -102,5 +103,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.074"
         app:srcCompat="@drawable/logo_app" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
