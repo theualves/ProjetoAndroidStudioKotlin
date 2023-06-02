@@ -29,7 +29,7 @@
 
             <TextView
                 android:id="@+id/tvEmpName"
-                android:layout_width="210dp"
+                android:layout_width="220dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="Emp Name"
@@ -55,12 +55,12 @@
 
             <TextView
                 android:id="@+id/tvEmpEmail"
-                android:layout_width="210dp"
+                android:layout_width="220dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="Emp Email"
                 android:textColor="@color/black"
-                android:textSize="15sp" />
+                android:textSize="13sp" />
 
         </LinearLayout>
 
@@ -80,12 +80,12 @@
 
             <TextView
                 android:id="@+id/tvEmpId"
-                android:layout_width="210dp"
+                android:layout_width="220dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="Emp ID"
                 android:textColor="@color/black"
-                android:textSize="15sp" />
+                android:textSize="13sp" />
 
         </LinearLayout>
 

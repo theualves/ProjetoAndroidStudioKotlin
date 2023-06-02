@@ -8,16 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 class EmpAdapter(private val empList: ArrayList<EmpresaModelo>) :
     RecyclerView.Adapter<EmpAdapter.ViewHolder>() {
-
-    // private lateinit var mListener: onItemClickListener
-
-//    interface onItemClickListener{
-//        fun onItemClick(position: Int)
-//    }
-//
-//    fun setOnItemClickListener(clickListener: onItemClickListener){
-//        mListener = clickListener
-//    }
+    
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.emp_list_item, parent, false)
