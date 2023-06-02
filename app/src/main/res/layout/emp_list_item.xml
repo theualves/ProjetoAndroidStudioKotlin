@@ -25,7 +25,8 @@
                 android:text="@string/listItemUser"
                 android:textColor="@color/black"
                 android:textSize="15sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"/>
 
             <TextView
                 android:id="@+id/tvEmpName"
@@ -51,7 +52,8 @@
                 android:text="E-mail:"
                 android:textColor="@color/black"
                 android:textSize="15sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"/>
 
             <TextView
                 android:id="@+id/tvEmpEmail"
@@ -76,7 +78,8 @@
                 android:text="ID:"
                 android:textColor="@color/black"
                 android:textSize="15sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"/>
 
             <TextView
                 android:id="@+id/tvEmpId"
